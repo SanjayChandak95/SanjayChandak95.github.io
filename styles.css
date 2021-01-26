@@ -1,4 +1,6 @@
-body {margin:0;}
+body {
+    margin:0;
+}
 
 .navbar {
   overflow: hidden;
@@ -55,4 +57,10 @@ body {margin:0;}
 .column {
     float: left;
     width: 50%;
+}
+
+.ProfileImage {
+    width: 100%;
+    max-width: 100px;
+    height: auto;
 }
