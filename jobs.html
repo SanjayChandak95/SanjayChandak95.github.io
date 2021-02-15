@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jobs</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="Jobs, Job Details">
+        <meta name="keywords" content="Jobs , Jobs Detail>
+        <meta name="author" content="Sanjay Chandak">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">   
+    </head>
+
+    <body>
+            <div class="navbar">
+                <a class="navitem" href="#"></a>
+            </div>
+
+            <div class ="Container">
+                <form action="#" method="POST" id="search-form"></form>
+                    <div class="row">
+                        <input type="text" id = "jobPost" placeholder="Job Post" />
+                        <input type="text" id = "experience" placeholder="Experience in year" />
+                        <input type="text" id = "salary" placeholder="Minimum Expected Salary" />
+                        <!-- <input type="text" id = "location" placeholder="Location" /> -->
+                    </div>
+                    <button type="submit" class="btn" id="search-button">Search</button>
+                </form>
+                <hr>
+                <div class="row">
+                    <div id="cards-root"></div>
+                </div>
+            </div>
+
+            <script src="asset/jobsData.js"></script>
+            <script src="jobs.js" defer></script>
+             <script>
+                document.addEventListener('DOMContentLoaded', () => {
+                renderAllCards(window.jobs);
+                addEventHandlers();
+        });
+    </script>
+    </body>
+</html>
